@@ -1,0 +1,38 @@
+2018-03-29 17:22:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://en.wikipedia.org/wiki/Computerworld> (referer: https://en.wikipedia.org/wiki/Python_Software_Foundation)
+Traceback (most recent call last):
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spiders\crawl.py", line 76, in _parse_response
+    cb_res = callback(response, **cb_kwargs) or ()
+  File "G:\CodeNew\shiyanlou\scraping\wikiSpider\wikiSpider\spiders\articleSpider.py", line 40, in parse_item
+    title = response.xpath('//h1/text()')[0].extract()
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\parsel\selector.py", line 61, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2018-03-29 17:22:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://en.wikipedia.org/wiki/Computerworld_Horizon_Awards> (referer: https://en.wikipedia.org/wiki/Python_Software_Foundation)
+Traceback (most recent call last):
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\scrapy\spiders\crawl.py", line 76, in _parse_response
+    cb_res = callback(response, **cb_kwargs) or ()
+  File "G:\CodeNew\shiyanlou\scraping\wikiSpider\wikiSpider\spiders\articleSpider.py", line 40, in parse_item
+    title = response.xpath('//h1/text()')[0].extract()
+  File "g:\codenew\shiyanlou\scraping\scrapingenv\lib\site-packages\parsel\selector.py", line 61, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
