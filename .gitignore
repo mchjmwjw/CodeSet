@@ -1,5 +1,5 @@
 .scraping/scrapingEnv/
 scraping/scrapingEnv/
 
-.scraping/lxml-4.2.1-cp35-cp35m-win_amd64.whl
-.scraping/Twisted-17.9.0-cp35-cp35m-win_amd64.whl
+scraping/lxml-4.2.1-cp35-cp35m-win_amd64.whl
+scraping/Twisted-17.9.0-cp35-cp35m-win_amd64.whl
